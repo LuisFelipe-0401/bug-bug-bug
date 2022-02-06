@@ -1,0 +1,298 @@
+* { 
+    margin: 0; padding: 0; 
+}
+#page {
+    display: grid;
+    height: 894px; /*Original 250px*/
+    grid-template-areas: "header header" "main main" "footer footer";
+}
+#logo {
+    height: 50px;
+    position: relative;
+}
+#adicionais {
+    color: white;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#page>header {
+    grid-area: header;
+    background-color: #1c1c1c;
+    height: 50px;
+}
+#page>main{
+    grid-area: main;
+    background-color: rgb(236, 233, 233);
+}
+#page>footer {
+    grid-area: footer;
+    background-color: #1c1c1c;
+    height: 50px;
+}
+div.quadrado {
+    height: 900px;
+    width: 900px;
+    box-shadow: 0 0 1em black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: white;
+    border-radius: 10px;
+}
+#img3 {
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
+#cidade {
+    position: absolute;
+    top: 90px;
+    left: 220px;
+    font-size: 15px;
+}
+h1 {
+    position: relative;
+    left: 220px;
+    top: 20px;
+}
+#estrela {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 30px;
+    left: 220px;
+}
+#localizacao {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 90px;
+    left: 200px;
+}
+#avaliacao {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+#nota {
+    position: absolute;
+    top: 120px;
+    left: 225px;
+    font-size: 15px;
+}
+div.quadrado2 {
+    background-color: rgb(217, 233, 185);
+    height: 150px;
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+    left: 540px;
+    top: -40px;
+}
+#oferta {
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    position: absolute;
+    top: 90px;
+    left: 190px;
+}
+#oferta2 {
+    text-decoration: none;
+    color: #b8860b;
+}
+#valor {
+    color: green;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+#cafe {
+    color: green;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: none;
+    bottom: 500px;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+    font-size: 15px;
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+
+.slider li:nth-child(1) label {
+    left: 100px;
+}
+
+.slider li:nth-child(2) label {
+    left: 200px;
+}
+
+.slider li:nth-child(3) label {
+    left: 300px;
+}
+.slider li:nth-child(4) label {
+    left: 400px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+#img1 {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 250px;
+    left: 350px;
+}
+#img2 {
+    position: absolute;
+    height: 25%;
+    width: 15%;
+    top: 250px;
+    left: 750px;
+}
+#im3 {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 450px;
+    left: 350px;
+}
+#img4 {
+    position: absolute;
+    height: 25%;
+    width: 15%;
+    top: 450px;
+    left: 750px;
+}
+#h1{
+    font-size: 10px;
+}
+#h2{
+    font-size: 10px;
+}
+#h3{
+    font-size: 10px;
+}
+#h4{
+    font-size: 10px;
+}
+#slide1{
+    width: 70px;
+    background-color: turquoise;
+}
+@slide1:checked{
+    #info{
+        display:true;
+    }
+    
+}
+#slide2{
+    width: 50px;
+    background-color: turquoise;
+}
+#slide3{
+    width: 200px;
+    background-color: turquoise;
+}
+#slide4{
+    background-color: turquoise;
+}
+#info{
+    position: absolute;
+    left: 470px;
+    top: 250px;
+}
+#desc{
+    position: absolute;
+    left: 30px;
+    top: 260px;
+    font-size: 20px;
+}
+#text{
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    font-size: 20px;
+    width: 800px;
+}
+#ofer{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 20px;
+}
+#f{
+    position: absolute;
+    left: 400px;
+    top: 250px;
+    font-size: 20px;
+}
+form {
+    position: absolute;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    top: 250px;
+    left: 550px;
+}
+#b1{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 350px;
+    left: 450px;
+    height: 100px;
+}
+#b2{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 350px;
+    left: 850px;
+    height: 100px;
+}
+#b3{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 550px;
+    left: 450px;
+    height: 100px;
+}
+#b4{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 550px;
+    left: 850px;
+    height: 100px;
+}

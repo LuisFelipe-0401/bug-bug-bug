@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tela_hotel.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<script>
+    function demoDisplay() {
+        if(document.getElementById("slide1").checked){
+            document.getElementById("info").style.display = "";
+            document.getElementById("fotos").style.display = "none";
+            document.getElementById("avaliações").style.display = "none";
+            document.getElementById("ofertas").style.display = "none";
+        }
+        if(document.getElementById("slide2").checked){
+            document.getElementById("info").style.display = "none";
+            document.getElementById("fotos").style.display = "";
+            document.getElementById("avaliações").style.display = "none";
+            document.getElementById("ofertas").style.display = "none";
+        }
+        if(document.getElementById("slide3").checked){
+            document.getElementById("info").style.display = "none";
+            document.getElementById("fotos").style.display = "none";
+            document.getElementById("avaliações").style.display = "";
+            document.getElementById("ofertas").style.display = "none";
+        }
+        if(document.getElementById("slide4").checked){
+            document.getElementById("info").style.display = "none";
+            document.getElementById("fotos").style.display = "none";
+            document.getElementById("avaliações").style.display = "none";
+            document.getElementById("ofertas").style.display = "";
+        }
+
+        }
+</script>
+</head>
+<body>
+
+    <section id="page">
+        <header>
+            <a href="https://www.youtube.com/"><img src="imagens/logo2.jfif" id="logo"></a>
+        </header>
+        <main>
+            <div class="quadrado">
+                <ul class="slider">
+                    <li>
+                          <input type="radio" id="slide1" name="slide" checked onclick="demoDisplay()">
+                          <label for="slide1"><h1 id="h1">Info</h1></label>
+                          
+                    </li>
+                    <li>
+                          <input type="radio" id="slide2" name="slide"onclick="demoDisplay()">
+                          <label for="slide2"><h1 id="h2">fotos</h1></label>
+                  </li>
+                    </li>
+                    <li>
+                          <input type="radio" id="slide3" name="slide"onclick="demoDisplay()">
+                          <label for="slide3"><h1 id="h3">Avaliações</h1></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="slide4" name="slide" onclick="demoDisplay()">
+                        <label for="slide4"><h1 id="h4">Ofertas</h1></label>
+                </ul>
+                
+                <div id="info" style="display: none">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12356.206170000587!2d-43.178281909795295!3d-22.96782196522594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5540e4f928d%3A0xef2e5118ccad88ae!2sCopacabana%20Palace%2C%20A%20Belmond%20Hotel%2C%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1644169541010!5m2!1spt-BR!2sbr" width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <h1 id="desc">Descrição</h1>
+                    <h1 id="text">O que esperar durante sua estadia
+                        Roupas de cama higienizadas em alta temperatura
+                        Máscara facial obrigatória para hóspedes nas áreas comuns
+                        Máscara facial obrigatória para funcionários nas áreas comuns
+                        Sinalização de distanciamento social no chão
+                        Antisséptico para as mãos disponível para hóspedes e funcionários
+                        Política de afastamento para funcionários com sintomas
+                        Áreas de grande circulação higienizadas regularmente
+                        Equipe orientada a lavar as mãos com frequência
+                        Verificações diárias de sintomas e temperatura da equipe
+                        Processo de check-in sem contato
+                        Processo de check-out sem contato</h1>
+                </div>
+                <div id="fotos" style="display: none">
+                    <img src="imagens/img_1.jpeg" id="img1"/>
+                    <img src="imagens/img_2.jpeg" id="img2"/>
+                    <img src="imagens/img_3.jpeg" id="im3"/>
+                    <img src="imagens/img_4.jpeg" id="img4"/>
+                </div>
+                <div id="avaliações" style="display: none;">
+                    <form action="/pagina-processa-dados-do-form" method="post">
+                        <div>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" />
+                        </div>
+                        <div>
+                            <label for="msg">Mensagem:</label>
+                            <textarea id="msg"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar sua mensagem</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="ofertas" style="display: none">
+                    <h1 id="f">Ofertas irresistíveis</h1>
+                    <button id="b1">Nosso preço mais baixo</button>
+                    <button id="b2">Preço recomendado
+                        Cancelamento gratuito
+                        Café da manhã grátis</button>
+                    <button id="b3">Nosso preço mais baixo com cancelamento gratuito</button>
+                    <button id="b4">Nosso preço mais baixo com café da manhã grátis e cancelamento gratuito</button>
+                </div>
+                <h1>Belmond Copacabana Palace</h1>
+                <h2 id="cidade">Rio de Janeiro, 6.7 km até o centro da cidade</h2>
+                <img src="imagens/img_3.jpeg" id="img3">
+                <img src="icones/estrela.png" id="estrela">
+                <img src="icones/estrela.png" id="estrela">
+                <img src="icones/estrela.png" id="estrela">
+                <img src="icones/estrela.png" id="estrela">
+                <img src="icones/estrela.png" id="estrela">
+                <img src="icones/localizacao.png" id="localizacao">
+                <img src="icones/avaliacao.png" id="avaliacao">
+                <h2 id="nota">9.2 de nota</h2>
+                <div class="quadrado2">
+                    <button id="oferta"><a href="https://www.youtube.com/" id="oferta2">Ver oferta ></a></button>
+                    <h2 id="valor">R$1900.00</h2>
+                    <h2 id="cafe">Café da manhã grátis</h2>
+                </div>
+            </div>
+        </main>
+        <footer>
+           <a href="https://youtu.be/B3gAZvncfa0" id="adicionais">Suporte</a>
+           <a href=https://www.facebook.com id="adicionais">Redes Sociais</a>
+           <a href="https://youtu.be/B3gAZvncfa0" id="adicionais">Sobre nós</a>
+    </footer>
+    </section>
+</body>
+</html>
